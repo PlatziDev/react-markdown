@@ -1,7 +1,7 @@
 # react-markdown
 React component to parse and render Platzi Flavored Markdown content
 
-This component made use of []@platzi/markdown](https://github.com/PlatziDev/markdown) to render a content using markdown in React.
+This component made use of [@platzi/markdown](https://github.com/PlatziDev/markdown) to render a content using markdown in React.
 
 ## Usage
 Install it with:
