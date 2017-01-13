@@ -6,9 +6,11 @@ function Markdown(props) {
   const tagProps = Object
     .keys(props)
     .filter(key => (
-      key === 'tagName' || key === 'content' || key === 'parser'
+      key !== 'tagName' && key !== 'content' && key !== 'parser'
     ))
-    .reduce((map, key) => map[key] = props[key], {});
+    .reduce((map, key) => (
+      Object.assign({}, map, { [key]: props[key] })
+    ), {});
 
   const parser = createParser(props.parser);
 

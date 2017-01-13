@@ -27,7 +27,7 @@ function greeting() {
 test('Markdown component', () => {
   expect(
     renderer.create(
-      React.createElement(Markdown, { content })
+      React.createElement(Markdown, { content, id: 'content' })
     ).toJSON()
   ).toMatchSnapshot();
 });
