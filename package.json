@@ -1,0 +1,48 @@
+{
+  "name": "react-markdown",
+  "version": "1.0.0",
+  "description": "React component to parse and render Platzi Flavored Markdown content",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest",
+    "test:fix": "jest -u",
+    "test:watch": "jest --watch",
+    "test:report": "jest --coverage"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sergiodxa/react-markdown.git"
+  },
+  "keywords": [
+    "react",
+    "markdown",
+    "platzi"
+  ],
+  "author": {
+    "name": "Platzi Team",
+    "email": "cursos@platzi.com",
+    "url": "https://github.com/PlatziDev"
+  },
+  "contributors": [
+    {
+      "name": "Sergio Daniel Xalambrí",
+      "email": "colo@platzi.com",
+      "url": "https://sergio.xalambri.xyz/"
+    }
+  ],
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sergiodxa/react-markdown/issues"
+  },
+  "homepage": "https://github.com/sergiodxa/react-markdown#readme",
+  "dependencies": {
+    "@platzi/markdown": "1.0.1"
+  },
+  "devDependencies": {
+    "jest": "18.1.0",
+    "react-test-renderer": "15.4.2"
+  },
+  "peerDependencies": {
+    "react": "^15.0.0"
+  }
+}
