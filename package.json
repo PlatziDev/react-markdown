@@ -1,5 +1,5 @@
 {
-  "name": "react-markdown",
+  "name": "@platzi/react-markdown",
   "version": "1.0.0",
   "description": "React component to parse and render Platzi Flavored Markdown content",
   "main": "index.js",
