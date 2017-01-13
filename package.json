@@ -1,6 +1,6 @@
 {
   "name": "@platzi/react-markdown",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "React component to parse and render Platzi Flavored Markdown content",
   "main": "index.js",
   "scripts": {
@@ -11,7 +11,7 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/sergiodxa/react-markdown.git"
+    "url": "git+https://github.com/PlatziDev/react-markdown.git"
   },
   "keywords": [
     "react",
@@ -32,9 +32,9 @@
   ],
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/sergiodxa/react-markdown/issues"
+    "url": "https://github.com/PlatziDev/react-markdown/issues"
   },
-  "homepage": "https://github.com/sergiodxa/react-markdown#readme",
+  "homepage": "https://github.com/PlatziDev/react-markdown#readme",
   "dependencies": {
     "@platzi/markdown": "1.0.1"
   },
