@@ -36,10 +36,12 @@
   },
   "homepage": "https://github.com/PlatziDev/react-markdown#readme",
   "dependencies": {
-    "@platzi/markdown": "1.0.1"
+    "@platzi/markdown": "1.0.1",
+    "prop-types": "^15.5.4"
   },
   "devDependencies": {
     "jest": "18.1.0",
+    "react": "^15.5.3",
     "react-test-renderer": "15.4.2"
   },
   "peerDependencies": {
