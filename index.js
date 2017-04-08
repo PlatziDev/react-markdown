@@ -1,4 +1,5 @@
 const React = require('react');
+const PropTypes = require('prop-types');
 const createParser = require('@platzi/markdown');
 
 
@@ -48,9 +49,9 @@ function Markdown(props) {
 
 
 Markdown.propTypes = {
-  tagName: React.PropTypes.string,
-  content: React.PropTypes.string.isRequired,
-  parser: React.PropTypes.object,
+  tagName: PropTypes.string,
+  content: PropTypes.string.isRequired,
+  parser: PropTypes.object,
 };
 
 Markdown.defaultProps = {
