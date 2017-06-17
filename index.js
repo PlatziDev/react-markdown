@@ -2,7 +2,6 @@ const React = require('react');
 const PropTypes = require('prop-types');
 const createParser = require('@platzi/markdown');
 
-
 /**
  * Filter custom props
  * @param  {string}  key The props name
@@ -21,10 +20,9 @@ function filter(key) {
  */
 function reducer(props, map, key) {
   return Object.assign({}, map, {
-    [key]: props[key]
+    [key]: props[key],
   });
 }
-
 
 /**
  * Render Platzi Flavored Markdown inside a React application.
@@ -33,20 +31,19 @@ function reducer(props, map, key) {
  * @param {Object} [props.parser={}]     The parser options
  */
 function Markdown(props) {
-  const tagProps = Object
-    .keys(props)
-    .filter(filter)
-    .reduce(reducer.bind(null, props), {});
+  const tagProps = Object.keys(props).filter(filter).reduce(reducer.bind(null, props), {});
 
   const parser = createParser(props.parser);
 
-  return React.createElement(props.tagName, Object.assign(tagProps, {
-    dangerouslySetInnerHTML: {
-      __html: parser(props.content),
-    }
-  }));
+  return React.createElement(
+    props.tagName,
+    Object.assign(tagProps, {
+      dangerouslySetInnerHTML: {
+        __html: parser(props.content),
+      },
+    }),
+  );
 }
-
 
 Markdown.propTypes = {
   tagName: PropTypes.string,
@@ -58,6 +55,5 @@ Markdown.defaultProps = {
   tagName: 'div',
   parser: {},
 };
-
 
 module.exports = Markdown;

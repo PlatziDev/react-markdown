@@ -23,11 +23,8 @@ function greeting() {
 \`\`\`
 @[youtube](ajLJOhf-WdA)`;
 
-
 test('Markdown component', () => {
   expect(
-    renderer.create(
-      React.createElement(Markdown, { content, id: 'content' })
-    ).toJSON()
+    renderer.create(React.createElement(Markdown, { content, id: 'content' })).toJSON(),
   ).toMatchSnapshot();
 });
